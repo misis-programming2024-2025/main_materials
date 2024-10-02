@@ -1,5 +1,9 @@
 # Материалы к курсу Программирование и алгоритмизация с++
 
+**[Табличка с баллами и посещаемостью](https://docs.google.com/spreadsheets/d/1cJldUTji6MbJvnEpPqzguK4t5F6epBvkCiA2WKFspGk/edit?usp=sharing)**
+
+## Материалы по парам
+
 1. [Введение. Основы](/1.Introduction)
 2. [Типы, операции, циклы](/2.Types_operations_loops)
 3. [Ссылки, функции, константность, гит ч1](/3.Ref_func_const_git)
