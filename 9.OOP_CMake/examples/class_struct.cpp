@@ -29,6 +29,21 @@ class OurDataTypeClass {
     int number = 10;
 
   public:
+
+    //конструктор
+    OurDataTypeClass(int value){
+        this->number = value;
+    }
+
+    // OurDataTypeClass(int value)
+    //     : number(value)
+    // {}
+
+    // конструктор копирования + список инициализации
+    OurDataTypeClass(const OurDataTypeClass& other)
+        : number(other.number)
+    {}
+    
     int addNumber(int new_value){
         return this->number += new_value;
     }
@@ -53,8 +68,9 @@ int main() {
     std::cout << data_type.number << std::endl;
     std::cout << data_type.addNumber(20) << std::endl;
 
-    OurDataTypeClass data_type_cl;
+    OurDataTypeClass data_type_cl(45);
+    std::cout << data_type_cl.getNumber() << std::endl;
     // std::cout << data_type_cl.number << std::endl;
     std::cout << data_type_cl.addNumber(20) << std::endl;
-    std::cout << data_type_cl.getNumber();
+    std::cout << data_type_cl.getNumber() << std::endl;
 }
