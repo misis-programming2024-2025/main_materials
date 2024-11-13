@@ -27,6 +27,7 @@ struct OurDataType {
 class OurDataTypeClass {
   private:
     int number = 10;
+    double d_number = 1.0;
 
   public:
 
@@ -35,9 +36,10 @@ class OurDataTypeClass {
         this->number = value;
     }
 
-    // OurDataTypeClass(int value)
-    //     : number(value)
-    // {}
+    OurDataTypeClass(int value)
+        : number(value)
+        , d_number(value)
+    {}
 
     // конструктор копирования + список инициализации
     OurDataTypeClass(const OurDataTypeClass& other)
