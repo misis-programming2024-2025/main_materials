@@ -31,6 +31,8 @@ class OurDataTypeClass {
 
   public:
 
+    OurDataTypeClass() = default;
+
     //конструктор
     OurDataTypeClass(int value){
         this->number = value;
@@ -45,6 +47,9 @@ class OurDataTypeClass {
     OurDataTypeClass(const OurDataTypeClass& other)
         : number(other.number)
     {}
+
+    // деструктор
+    ~OurDataTypeClass() = default;
     
     int addNumber(int new_value){
         return this->number += new_value;
