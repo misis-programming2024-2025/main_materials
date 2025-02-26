@@ -222,13 +222,14 @@ public:
 	StackArrT();
 	~StackArrT();
 	StackArrT(const StackArrT<T>& other);
-	StackArrT(StackArrT<T>&& other);
+	StackArrT(StackArrT<T>&& other); //move
 	StackArrT(const std::initializer_list<T>& list);
 
 	void push(const T& value);
 	void pop();
 	T& top() const;
 	void swap(StackArrT<T>& other);
+    // значение второго стека с конца приклеиваются к первому стеку
 	void merge(StackArrT<T>& other);
 
 	bool empty() const;
