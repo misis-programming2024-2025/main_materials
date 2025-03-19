@@ -359,5 +359,47 @@ int main() {
 * В директории с проектами в папке IStack должно быть три заголовочных файла (один на абстрактный класс, два на релизацию) и CMakeLists
 * В классе IStack методы должны быть чисто виртуальными
 * Нужно добавить виртуальный метод void printToStream(std::ostream& os) чтобы перегрузить оператор вывода в родительском классе
-* Перегрузить оператор вывода в родительском классе
+* Перегрузить оператор вывода в родительском классе operator<<
 * Протестировать 
+
+Создаете директорию 
+/stack_base_prj
+    stack_base.hpp (в ней интерфейсный класс IStackBase)
+    stack_arr_t.hpp (в ней дочерний класс StackArrT)
+    stack_lst_t.hpp (в ней интерфейсный класс StackLstT)
+
+operator<< {
+    // вызов родительской (через родительский указатель) printToStream
+}
+
+
+По сути operator<< это bar() а printToStream это foo()
+```cpp
+class Base {
+public:
+    int b = 0;
+    virtual void foo() {
+        std::cout << b << std::endl;
+    }
+};
+
+class Derived : public Base {
+public:
+    int d = 10;
+    void foo() {
+        std::cout << d << std::endl;
+    }
+};
+
+void bar(Base& baseObg) {
+    baseObg.foo();
+}
+
+int main() {
+    Derived derived;
+    Base base;
+
+    bar(base);
+    bar(derived);
+}
+```

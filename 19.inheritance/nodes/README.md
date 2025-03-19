@@ -89,3 +89,6 @@ private:
 
 #endif
 ```
+
+/stack_lst_t_prj
+	/stack_lst_t
