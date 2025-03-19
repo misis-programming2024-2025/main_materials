@@ -365,9 +365,9 @@ int main() {
 ```
 Создаете директорию   
 /stack_base_prj  
-    stack_base.hpp (в ней интерфейсный класс IStackBase)  
-    stack_arr_t.hpp (в ней дочерний класс StackArrT)
-    stack_lst_t.hpp (в ней интерфейсный класс StackLstT)
+    stack_base.hpp (интерфейсный класс IStackBase)  
+    stack_arr_t.hpp (дочерний класс StackArrT)
+    stack_lst_t.hpp (дочерний класс StackLstT)
 
 operator<< {
     // вызов родительской (через родительский указатель) printToStream
