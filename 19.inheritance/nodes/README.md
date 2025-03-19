@@ -63,20 +63,20 @@ public:
     StackLstT(StackLstT<T>&& other);
     StackLstT(const std::initializer_list<T>& list);
   
-  	void push(const T& value);
-	void pop();
-	T& top() const;
-	void swap(StackLstT<T>& other);
-	void merge(StackLstT<T>& other);
+    void push(const T& value);
+    void pop();
+    T& top() const;
+    void swap(StackLstT<T>& other);
+    void merge(StackLstT<T>& other);
   
-	bool empty() const;
-	std::ptrdiff_t size() const;
+    bool empty() const;
+    std::ptrdiff_t size() const;
 
-	bool operator==(const StackLstT<T>& rhs) const;
-	bool operator!=(const StackLstT<T>& rhs) const;
+    bool operator==(const StackLstT<T>& rhs) const;
+    bool operator!=(const StackLstT<T>& rhs) const;
 
-	StackLstT<T>& operator=(const StackLstT<T>& rhs) noexcept;
-	StackLstT<T>& operator=(StackLstT<T>&& other);
+    StackLstT<T>& operator=(const StackLstT<T>& rhs) noexcept;
+    StackLstT<T>& operator=(StackLstT<T>&& other);
 
 private:
     struct Node {
@@ -89,6 +89,3 @@ private:
 
 #endif
 ```
-
-/stack_lst_t_prj
-	/stack_lst_t
