@@ -61,17 +61,15 @@ int main(){
 
     CustomClass myClass;
 
-    // CustomClass::Iterator
-
-    // for(int i = 0; i < 5; i++){
-    //     std::cout << myClass.data[i] << " ";
-    // }
-    std::cout << "\n";
-
-
-    for (const auto& el : myClass) {
-        std::cout << el << " ";
+    for(int i = 0; i < 5; i++){
+        std::cout << myClass.data[i] << " ";
     }
-
     std::cout << "\n";
+
+
+    // for (const auto& el : myClass) {
+    //     std::cout << el << " ";
+    // }
+
+    // std::cout << "\n";
 }

@@ -36,7 +36,7 @@ public:
             }
 
             std::string operator*() const {
-                if (index < size){
+                if (index < 5){
                     return std::to_string(*(customClass->data + index));
                 } else {
                     return customClass->value.category;

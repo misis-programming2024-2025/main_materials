@@ -25,7 +25,7 @@ returnType operator*() const //разыменование - что должен 
 
 ```cpp
 template<typename KeyType, typename ValueType>
-class hashTable {
+class HashTable {
 private:
     struct Node {
         KeyType key;
