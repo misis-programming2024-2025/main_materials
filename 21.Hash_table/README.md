@@ -64,5 +64,4 @@ public:
 
 ### Обязательно 
 Написать доктесты
-Форматировать по Google Style Guide проверяя cpplint.py
 
