@@ -1,0 +1,11 @@
+FROM python:3.8-slim
+
+RUN pip install \
+    pytest==6.0.0rc1 \
+    requests==2.24.0
+
+COPY test.py /code/
+COPY test_spans.jsonl /code/
+
+CMD ["pytest", "-vv", "/code/test.py"]
+
